@@ -1,0 +1,36 @@
+<md-card class="execute-area">
+  <md-card-title-text>アップロード</md-card-title-text>
+  <p></p>
+  <div layout="row" layout-align="space-around center" flex layout-padding>
+
+    <!-- SERIES -->
+    <form name="s1">
+      <div>
+        <md-input-container class="md-block">
+          <label>TITLE1</label>
+          <p></p>
+          <input type="text" name="s2" ng-model="pir.formSeries" 
+                  placeholder="input or select a series"
+                  required
+                  md-maxlength="10"
+                  ng-change="pir.onFormSeriesChange()"
+                  auto-complete
+          />
+          <!--
+            ng-pattern="/^[a-zA-Z]{10}$/" 
+            <div ng-message="pattern" class="my-message">フォーマット違反です</div>
+          -->
+          <div ng-messages="s1.s2.$error" role="alert">
+            <div ng-message="required" class="my-message">必須です</div>
+          </div>
+
+        </md-input-container>
+      </div>
+    </form>
+
+    <div class="box1">box1</div>
+    <div class="box1">box1</div>
+    
+  </div>
+</md-card>
+
