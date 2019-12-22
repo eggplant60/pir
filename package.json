@@ -2,6 +2,7 @@
     "name": "my-project-name",
     "version": "0.1.0",
     "devDependencies": {
+        "@types/angular": "^1.6.57",
         "grunt": "~1.0.4"
     }
 }

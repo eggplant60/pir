@@ -8,7 +8,8 @@ angular.module('app')
             $log.debug('autoComplete()', elem);
             elem.autocomplete({
                 source: autoCompleteDataService.getSource(),
-                minLength: 0
+                dely: 500,
+                minLength: 1
             });
 
         }
@@ -20,5 +21,5 @@ angular.module('app')
             //this is where you'd set up your source... could be an external source, I suppose. 'something.php'
             return ['apples', 'oranges', 'bananas'];
         }
-    }
+    };
 }]);
