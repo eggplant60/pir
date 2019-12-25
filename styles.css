@@ -19,9 +19,9 @@
   width: 100%;
 }
 
-.content {
-  hight: 100vh;
-  width: 100vw;
+.full-layout {
+  height: 100vh;
+  width:  100vw;
 }
 
 div.box1 {
@@ -32,8 +32,14 @@ div.box1 {
 }
 
 div.box2 {
-  height: 100px;
+  height: 1000px;
   width:  80px;
-  background-color: blue;
-  color: white;
+  background-color: gray;
+  overflow: scroll;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 100%;
+  max-height: 400px;
 }

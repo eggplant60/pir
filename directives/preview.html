@@ -1,13 +1,35 @@
-<md-card>
-  <md-card-title-text>プレビュー</md-card-title-text>
-  <p></p>
-  <div class="preview-area" layout="row" layout-align="space-around center" flex layout-padding>
+<md-content>
+  <label>プレビュー</label>
 
-      <div class="box2">box2</div>
-      <div class="box2">box2</div>
-      <div class="box2">box2</div>
+  <div class="preview-area" layout="row" layout-align="space-around start" layout-padding>
+
+    <div>
+      <label>TEST0</label>
+      <p></p>
+      <md-list class="scroll">
+        <md-list-item ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+          <div>{{ i }}</div>
+        </md-list-item>
+      </md-list>
+    </div>
+
+    <div>
+      <label>TEST1</label>
+      <p></p>
+      <md-input-container class="scroll">
+        <textarea cols="20" rows="10">サンプル</textarea>
+      </md-input-container>
+    </div> 
+
+    <div>
+      <label>TEST2</label>
+      <p></p>
+      <md-input-container class="scroll">
+        <textarea cols="20" rows="40">サンプル</textarea>
+      </md-input-container>
+    </div>
   </div>
-</md-card>
+</md-content>
 
 
 <!--
